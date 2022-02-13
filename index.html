@@ -16,6 +16,13 @@
         font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive;
         color: white;
       }
+      
+      #music {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+      }
     </style>
   </head>
 
@@ -27,6 +34,13 @@
     <br />
     <p>Glædelig jul!</p>
     <h1>TBEST 2021/22</h1>
+    
+    <div id="music">
+      <audio style="width:100%" controls autoplay>
+        <source src="jingle-bells.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
     
     <div id="snow"></div>
     <script>
