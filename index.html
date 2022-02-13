@@ -27,5 +27,17 @@
     <br />
     <p>Glædelig jul!</p>
     <h1>TBEST 2021/22</h1>
+    
+    <div id="snow"></div>
+    <script>
+      import * as Snow from './snow.js'
+      var snow = new Snow.default({
+        id: 'snow',
+        theme: 'berry',
+        min_size: 1,
+        max_size: 5
+      });
+      snow.start()
+    </script>
   </body>
 </html>
