@@ -23,6 +23,27 @@
         left: 0px;
         width: 100%;
       }
+      
+      #cta {
+        position: absolute;
+        bottom: 55px;
+        left: 10px;
+        animation: MoveUpDown 1s linear infinite;
+      }
+      
+      #cta.p {
+        color: firebrick;
+        font-size: 30px;
+      }
+      
+      @keyframes MoveUpDown {
+        0%, 100% {
+          bottom: 55px;
+        }
+        50% {
+          bottom: 100px;
+        }
+      }
     </style>
   </head>
 
@@ -35,8 +56,11 @@
     <p>Glædelig jul!</p>
     <h1>TBEST 2021/22</h1>
     
+    <div id="cta">
+      <p>👇 Klik for den optimale oplevelse</p>
+    </div>
     <div id="music">
-      <audio style="width:100%" controls autoplay>
+      <audio style="width:100%" controls loop autoplay>
         <source src="jingle-bells.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
